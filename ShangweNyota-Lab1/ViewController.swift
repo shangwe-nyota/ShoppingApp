@@ -28,14 +28,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var finalPriceField: UITextField!
     
+    @IBOutlet weak var clearButton: UIButton!
+    
     @IBAction func originalTextChanged(_ sender: Any) {
         if let originalPriceText = originalTextField.text {
-            if let originalPriceFloat = Float(originalPriceText) {
-                print(originalPriceFloat)
-                originalPrice = originalPriceFloat
-            } else {
-                print("Invalid Input")
-            }
+                originalPrice = Float(originalPriceText)
+                print(originalPrice)
         }
         updateFinalPrice()
     }
@@ -54,6 +52,20 @@ class ViewController: UIViewController {
             salesTax = Float(salesTaxText)
             print(salesTax)
         }
+        updateFinalPrice()
+    }
+    
+    
+    @IBAction func clearButton(_ sender: Any) {
+        print("Button clicked")
+        originalPrice = nil
+        discountPrice = nil
+        salesTax = nil
+        
+        originalTextField.text = ""
+        discountTextField.text = ""
+        salesTaxField.text = ""
+        finalPriceField.text = ""
         updateFinalPrice()
     }
     
