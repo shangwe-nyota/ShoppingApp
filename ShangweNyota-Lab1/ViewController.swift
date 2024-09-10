@@ -86,7 +86,7 @@ class ViewController: UIViewController {
             
             let priceAfterSalesTax: Float = calculateSalesTax(discountedPrice: discountedPrice, salesTax: salesTax)
             
-            finalPriceField.text = "$\(priceAfterSalesTax)"
+            finalPriceField.text = "$\(String(format: "%.2f", priceAfterSalesTax))"
             
         } else {
             print("Not all values entered!")
