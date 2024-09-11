@@ -12,7 +12,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        headerText.text = "My Shopping Calculator".localized();
+        originalPriceHeader.text = "Original Price".localized();
+        discountHeader.text = "Discount %".localized();
+        salesTaxHeader.text = "Sales Tax %".localized();
+        finalPriceHeader.text = "Final Price".localized();
+        eurosButton.setTitle("Euros".localized(), for: .normal)
+        clearButton.setTitle("Clear".localized(), for: .normal)
+
     }
+    
+    @IBOutlet weak var headerText: UILabel!
+    
+    @IBOutlet weak var originalPriceHeader: UILabel!
+    @IBOutlet weak var discountHeader: UILabel!
+    
+    @IBOutlet weak var salesTaxHeader: UILabel!
+    
+    @IBOutlet weak var finalPriceHeader: UILabel!
+    @IBOutlet weak var finalPrice: UILabel!
     
     var originalPrice: Float? // Initialized as nil but will be updated
     var discountPrice: Float? // Initialized as nil but will be updated
@@ -104,5 +122,13 @@ class ViewController: UIViewController {
         // Returns the price after sales tax
         let amountToAdd: Float = discountedPrice * (salesTax / 100)
         return discountedPrice + amountToAdd
+    }
+
+}
+
+
+extension String {
+    func localized() -> String {
+        return NSLocalizedString(self, tableName: "Localizable", bundle: .main, value: self, comment: self)
     }
 }

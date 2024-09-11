@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Final Price"; ObjectID = "AqD-nq-0kG"; */
+"AqD-nq-0kG.text" = "Final Price";
+
+/* Class = "UILabel"; text = "Discount %"; ObjectID = "D3q-OJ-kTh"; */
+"D3q-OJ-kTh.text" = "Discount %";
+
+/* Class = "UIButton"; configuration.title = "Euros"; ObjectID = "JPW-Yh-0Tb"; */
+"JPW-Yh-0Tb.configuration.title" = "Euros";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JPW-Yh-0Tb"; */
+"JPW-Yh-0Tb.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Sales Tax %"; ObjectID = "Y3o-13-JIs"; */
+"Y3o-13-JIs.text" = "Sales Tax %";
+
+/* Class = "UILabel"; text = "My Shopping Calculator"; ObjectID = "hhy-oy-NrZ"; */
+"hhy-oy-NrZ.text" = "My Shopping Calculator";
+
+/* Class = "UILabel"; text = "Original Price"; ObjectID = "joa-57-cdQ"; */
+"joa-57-cdQ.text" = "Original Price";
+
+/* Class = "UIButton"; configuration.title = "Clear"; ObjectID = "kDh-SB-6xt"; */
+"kDh-SB-6xt.configuration.title" = "Clear";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kDh-SB-6xt"; */
+"kDh-SB-6xt.normalTitle" = "Button";

@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  ShangweNyota-Lab1
+
+  Created by Shangwe Nyota on 9/10/24.
+  
+*/
+
+"My Shopping Calculator" = "Calculadora de Compras";
+"Original Price" = "Precio original";
+"Discount %" = "Descuento %";
+"Sales Tax %" = "impuesto de venta";
+"Final Price" = "Precio Final";
+"Euros" = "euros";
+"Clear" = "Clara";
+
+
+
